@@ -7,7 +7,7 @@
     <carousel :items-to-show="4">
     <slide v-for="slide in glasses" :key="slide.id">
       <div class="carousel__slide">
-        <img class="carousel__img" :src="`/src/assets/images/${slide.image}`" alt="">
+        <img class="carousel__img" :src="`images/${slide.image}`" alt="">
         <button @click="changeModel(slide.id)"> Model {{ slide.id+1 }}</button> 
       </div>
     </slide>
