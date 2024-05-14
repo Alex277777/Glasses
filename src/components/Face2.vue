@@ -138,8 +138,6 @@ async function trackFace() {
   const video2 = document.querySelector( "video" );
   const landmarks = await faceLandmarker.detect(video2);
 
-  console.log(landmarks)
-
   requestAnimationFrame( trackFace );
   if(!landmarks?.faceLandmarks?.length) return
 
