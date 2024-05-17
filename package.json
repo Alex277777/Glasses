@@ -1,0 +1,29 @@
+{
+  "name": "glasses",
+  "homepage": "https://alex277777.github.io/glasses/",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@mediapipe/face_detection": "^0.4.1646425229",
+    "@mediapipe/pose": "^0.5.1675469404",
+    "@mediapipe/tasks-vision": "^0.10.14",
+    "@tensorflow/tfjs": "^4.19.0",
+    "gh-pages": "^6.1.1",
+    "three": "^0.164.1",
+    "vue": "^3.4.21",
+    "vue-demi": "^0.14.7",
+    "vue3-carousel": "^0.3.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.11"
+  }
+}
